@@ -1,9 +1,14 @@
 
 import {Signup} from '@repo/ui'
 import axios from "axios"
+import {RecoilRoot} from "recoil"
+// import { isUserLoading } from 'store'
+
 export default function SigninPage(){
+  
     return(
-        <div>
+
+             <div>
             <Signup
              onClick={async(username,password)=>{
                 // alert(username)
@@ -17,5 +22,7 @@ export default function SigninPage(){
             }}
             />
         </div>
+     
+       
     )
 }

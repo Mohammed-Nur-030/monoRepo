@@ -22,6 +22,7 @@ console.log("Inside the func")
     const { username, password } = req.body;
     const admin = await Admin.findOne({ username });
     if (admin) {
+        console.log("Admin already exsits")
       res.status(403).json({ message: 'Admin already exists' });
     } else {
       const obj = { username: username, password: password };
