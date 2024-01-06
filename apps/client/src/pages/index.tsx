@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Button,Mybox } from '@repo/ui'
 // import {userState} from '@repo/'
-
+import {Signup} from '@repo/ui'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,6 +19,9 @@ export default function Home() {
   Hi Guys
  </Button>
  <Mybox></Mybox>
+ <br />
+ <br />
+ <Signup onClick={()=>{}}></Signup>
     </>
   )
 }
